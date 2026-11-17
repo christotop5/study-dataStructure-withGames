@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/fonayen/Desktop/notes INF/year_2/this_yesr/INF231/231_1/snake_christian/Fonayen_snake_SDL'
+gcc -o snake fonction_Fonayen.c main_Fonayen.c -g -O0 -lm -lpthread -fopenmp -lSDL2 -lSDL2_image -lSDL2_gfx -lSDL2_ttf
+make: Leaving directory '/home/fonayen/Desktop/notes INF/year_2/this_yesr/INF231/231_1/snake_christian/Fonayen_snake_SDL'
+ 

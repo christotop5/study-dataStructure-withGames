@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <paragraph index="6" node_type="writer">Name:         FONAYEN CHRISTIAN ASANGWA</paragraph>
+ <paragraph index="7" node_type="writer">Matricule : 23V2370</paragraph>
+ <paragraph index="22" node_type="writer">Ludo Game Project Report</paragraph>
+ <paragraph index="46" node_type="writer">by :Fonaye christian Asangwa.</paragraph>
+ <paragraph index="47" node_type="writer">ID :23V2370.</paragraph>
+ <paragraph index="48" node_type="writer">Enseinnant: Dr Thomas MESSI.</paragraph>
+ <paragraph index="53" node_type="writer">Ludo Game Report - Terminal Version</paragraph>
+ <paragraph index="55" node_type="writer">1. Context</paragraph>
+ <paragraph index="56" node_type="writer">This project is an implementation of the classic board game Ludo in C, designed for play within the terminal. This project builds upon prior graphical versions but translates the gameplay into a purely text-based environment, making it suitable for testing core game logic without a graphical interface.</paragraph>
+ <paragraph index="58" node_type="writer">2. Objective</paragraph>
+ <paragraph index="59" node_type="writer">The objective of this project is to create a functional terminal-based Ludo game where players can take turns, roll dice, and move seeds according to the rules of Ludo. This version uses a 2D character array to represent the board and leverages modular programming to organize the game's logic and flow.</paragraph>
+ <paragraph index="61" node_type="writer">3. Problem to Solve</paragraph>
+ <paragraph index="62" node_type="writer">Implementing Ludo on the terminal involves managing multiple game components, including initializing the board, handling seed movement, enforcing rules, and rendering the board state after each turn. The game must display seed positions, enforce turn-based play, and handle interactions like winning conditions and movement restrictions, all in a clear and concise terminal interface.</paragraph>
+ <paragraph index="64" node_type="writer">4. Solution Description</paragraph>
+ <paragraph index="65" node_type="writer">The solution involves creating a 32x32 2D character array (`boardFO`) to represent the Ludo board in the terminal. Key game components are encapsulated in structs, including `house`, `seed`, and `Point`, allowing for flexible and organized data management. Functions handle game tasks like initializing the board, managing player turns, rendering seeds, and checking winning conditions.</paragraph>
+ <paragraph index="67" node_type="writer">Key steps include:</paragraph>
+ <paragraph index="68" node_type="writer">- **Initializing the Board and Paths**: Using `init_boardFO` and `init_pathFO` functions to set up the board and paths for each player.</paragraph>
+ <paragraph index="69" node_type="writer">- **Rolling the Dice**: `roll_diceFO` generates random dice values for movement.</paragraph>
+ <paragraph index="70" node_type="writer">- **Handling Seed Movement**: `handleSeedMovementFO` manages seed movement based on dice results, updating the board with each move.</paragraph>
+ <paragraph index="71" node_type="writer">- **Rendering Dice Results and Board**: `renderDiceResultFO` and `print_boardFO` display the current board and dice outcome for players.</paragraph>
+ <paragraph index="73" node_type="writer">5. Principal Algorithm</paragraph>
+ <paragraph index="74" node_type="writer">The game loop in `main` governs player interactions:</paragraph>
+ <paragraph index="75" node_type="writer">1. Setup Phase: Initializes paths, houses, and the board.</paragraph>
+ <paragraph index="76" node_type="writer">2. Player Turn Logic:</paragraph>
+ <paragraph index="77" node_type="writer">   - Each player rolls the dice and, depending on the result, can move a seed or pass.</paragraph>
+ <paragraph index="78" node_type="writer">   - `handleSeedMovementFO` updates seed positions based on the current dice roll and enforces rules such as movement eligibility.</paragraph>
+ <paragraph index="79" node_type="writer">3. **Rendering**: Updates the terminal display with `print_boardFO` to show the current state of the board and each seed’s location.</paragraph>
+ <paragraph index="80" node_type="writer">4. **Winning Condition**: Each player’s seeds are checked for a winning condition using `has_worn`.</paragraph>
+ <paragraph index="82" node_type="writer">6. Data Structure Descriptions</paragraph>
+ <paragraph index="83" node_type="writer">- **2D Array (`boardFO`)**: Represents the board in the terminal as a grid.</paragraph>
+ <paragraph index="84" node_type="writer">- **`Point` Structure**: Holds coordinates (`x`, `y`) for board positions.</paragraph>
+ <paragraph index="85" node_type="writer">- **`seed` Structure**: Represents individual seeds with state, position, player, and character information.</paragraph>
+ <paragraph index="86" node_type="writer">- **`house` Structure**: Manages each player's seed count and houses the four initial seeds.</paragraph>
+ <paragraph index="87" node_type="writer">  </paragraph>
+ <paragraph index="88" node_type="writer">7. Instructions for Use</paragraph>
+ <paragraph index="89" node_type="writer">- How to Play**: Each player takes turns rolling a dice, moving a seed based on the outcome. The first player to move all their seeds to the end of the path wins.</paragraph>
+ <paragraph index="90" node_type="writer">- **Running and Compiling**: Compile the game using a C compiler (e.g., `gcc`) and run the executable in a terminal. To exit, a player can choose the exit option during their turn.</paragraph>
+ <paragraph index="91" node_type="writer">- Downloading Essentials**: Run `make download_Essentials` in the provided Makefile to ensure all necessary libraries are installed.</paragraph>
+</indexing>

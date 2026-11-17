@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/fonayen/Desktop/notes INF/year_2/this_yesr/INF231/231_1/sent/songo_christian/songo_terminal'
+gcc -o songo main_Fonayen.c fonction_Fonayen.c
+make: Leaving directory '/home/fonayen/Desktop/notes INF/year_2/this_yesr/INF231/231_1/sent/songo_christian/songo_terminal'
+ 
